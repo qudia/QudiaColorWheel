@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/qudia/QudiaColorWheel/master/readme_images/appicon.png" width="120">
+<img src="https://raw.githubusercontent.com/qudia/QudiaColorWheel/main/readme_images/appicon.png" width="120">
 
 # QudiaColorWheel
 
@@ -8,7 +8,7 @@
 
 A color wheel/picker for watchOS based on [Colorful](https://github.com/hayashi311/Color-Picker-for-iOS) that uses the Digital Crown as a brightness slider.
 
-<img src="https://raw.githubusercontent.com/qudia/QudiaColorWheel/master/readme_images/capture.gif" alt="Screen Capture" width="160">
+<img src="https://raw.githubusercontent.com/qudia/QudiaColorWheel/main/readme_images/capture.gif" alt="Screen Capture" width="160">
 
 ## Installation
 
@@ -44,7 +44,7 @@ To use QudiaColorWheel in the storyboard, add a new Hosting Controller and chang
 
 Make sure to **uncheck** Inherit Module From Target.
 
-<img src="https://raw.githubusercontent.com/qudia/QudiaColorWheel/master/readme_images/storyboard_custom_class.png" alt="Screen Capture" width="257">
+<img src="https://raw.githubusercontent.com/qudia/QudiaColorWheel/main/readme_images/storyboard_custom_class.png" alt="Screen Capture" width="257">
 
 ### Attributes
 
