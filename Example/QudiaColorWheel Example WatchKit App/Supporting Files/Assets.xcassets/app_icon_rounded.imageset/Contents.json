@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "logo_rounded_40px.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

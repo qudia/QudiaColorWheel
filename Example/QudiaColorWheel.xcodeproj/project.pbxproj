@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F0A98EE2593A9C600F748B0 /* EmbeddedColorWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0A98ED2593A9C600F748B0 /* EmbeddedColorWheelView.swift */; };
+		1F3A115725945B680030BF6F /* FullScreenColorWheelSelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F409F8425943F1700F3BE45 /* FullScreenColorWheelSelectedColorView.swift */; };
+		1F409F512594228000F3BE45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F409F502594228000F3BE45 /* ContentView.swift */; };
+		1F409F562594232300F3BE45 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F409F552594232300F3BE45 /* ImageConstants.swift */; };
+		1F409F5D2594288800F3BE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F43BBB425716109002A72C9 /* Assets.xcassets */; };
+		1F409F6225942A4500F3BE45 /* CustomButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F409F6125942A4500F3BE45 /* CustomButtonStyle.swift */; };
+		1F409F7325943AC400F3BE45 /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F409F7225943AC400F3BE45 /* SelectedColorView.swift */; };
+		1F409F7E25943F0300F3BE45 /* RGBComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F409F7D25943F0300F3BE45 /* RGBComponentsView.swift */; };
+		1F43BBAD25716107002A72C9 /* QudiaColorWheel Example.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1F43BBAC25716107002A72C9 /* QudiaColorWheel Example.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F43BBB325716107002A72C9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F43BBB125716107002A72C9 /* Interface.storyboard */; };
+		1F43BBB525716109002A72C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F43BBB425716109002A72C9 /* Assets.xcassets */; };
+		1F43BBBC25716109002A72C9 /* QudiaColorWheel Example.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1F43BBBB25716109002A72C9 /* QudiaColorWheel Example.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1F43BBC125716109002A72C9 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43BBC025716109002A72C9 /* HostingController.swift */; };
+		1F43BBC525716109002A72C9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F43BBC425716109002A72C9 /* ExtensionDelegate.swift */; };
+		1F43BBD02571610A002A72C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F43BBCF2571610A002A72C9 /* Preview Assets.xcassets */; };
+		1F4923362593F1E800ACC2FB /* VcConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4923352593F1E800ACC2FB /* VcConstants.swift */; };
+		22A6B6A8C39BFA2063862A2B /* Pods_QudiaColorWheel_Example_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150462E48B5A8BAE0B901801 /* Pods_QudiaColorWheel_Example_WatchKit_App.framework */; };
+		85F39D35E9C425C8A541A84D /* Pods_QudiaColorWheel_Example_WatchKit_App_QudiaColorWheel_Example_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A37E4A25DB0F142651233581 /* Pods_QudiaColorWheel_Example_WatchKit_App_QudiaColorWheel_Example_WatchKit_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F43BBAE25716107002A72C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F43BBAB25716107002A72C9;
+			remoteInfo = "TSColorWheel Example WatchKit App";
+		};
+		1F43BBBD25716109002A72C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F43BBBA25716109002A72C9;
+			remoteInfo = "TSColorWheel Example WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F43BBD62571610A002A72C9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1F43BBBC25716109002A72C9 /* QudiaColorWheel Example.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F43BBDA2571610A002A72C9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1F43BBAD25716107002A72C9 /* QudiaColorWheel Example.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		150462E48B5A8BAE0B901801 /* Pods_QudiaColorWheel_Example_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QudiaColorWheel_Example_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0A98ED2593A9C600F748B0 /* EmbeddedColorWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedColorWheelView.swift; sourceTree = "<group>"; };
+		1F159B8C2979238300A00AC3 /* QudiaColorWheel.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; name = QudiaColorWheel.podspec; path = ../QudiaColorWheel.podspec; sourceTree = "<group>"; };
+		1F409F502594228000F3BE45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F409F552594232300F3BE45 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
+		1F409F6125942A4500F3BE45 /* CustomButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonStyle.swift; sourceTree = "<group>"; };
+		1F409F7225943AC400F3BE45 /* SelectedColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedColorView.swift; sourceTree = "<group>"; };
+		1F409F7D25943F0300F3BE45 /* RGBComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBComponentsView.swift; sourceTree = "<group>"; };
+		1F409F8425943F1700F3BE45 /* FullScreenColorWheelSelectedColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenColorWheelSelectedColorView.swift; sourceTree = "<group>"; };
+		1F43BBA925716107002A72C9 /* QudiaColorWheel Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QudiaColorWheel Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F43BBAC25716107002A72C9 /* QudiaColorWheel Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QudiaColorWheel Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F43BBB225716107002A72C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1F43BBB425716109002A72C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F43BBB625716109002A72C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F43BBBB25716109002A72C9 /* QudiaColorWheel Example.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QudiaColorWheel Example.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F43BBC025716109002A72C9 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		1F43BBC425716109002A72C9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1F43BBCF2571610A002A72C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1F43BBD12571610A002A72C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4923352593F1E800ACC2FB /* VcConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcConstants.swift; sourceTree = "<group>"; };
+		81D2C6E076A89CE516D114DE /* Pods-QudiaColorWheel Example WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QudiaColorWheel Example WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-QudiaColorWheel Example WatchKit App/Pods-QudiaColorWheel Example WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		97AEBBC839DA086818A7F3B4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A37E4A25DB0F142651233581 /* Pods_QudiaColorWheel_Example_WatchKit_App_QudiaColorWheel_Example_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QudiaColorWheel_Example_WatchKit_App_QudiaColorWheel_Example_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7847C5943FD60851415DF7C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E6AEA89D5256C7623274671F /* Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		EAAFE422FCA5DF03A4AF0F2E /* Pods-QudiaColorWheel Example WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QudiaColorWheel Example WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-QudiaColorWheel Example WatchKit App/Pods-QudiaColorWheel Example WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		EE729A006860F4B624C663C1 /* Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F43BBB825716109002A72C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F39D35E9C425C8A541A84D /* Pods_QudiaColorWheel_Example_WatchKit_App_QudiaColorWheel_Example_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22B9B37CF4A2D7C4BA3E01A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A6B6A8C39BFA2063862A2B /* Pods_QudiaColorWheel_Example_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBEAD5692D23C3D96B40D8EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F0A98F22593AAC000F748B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F43BBB425716109002A72C9 /* Assets.xcassets */,
+				1F43BBB625716109002A72C9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F0A98F32593AAC400F748B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F0A98F42593AAD400F748B0 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F0A98F42593AAD400F748B0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1F43BBB125716107002A72C9 /* Interface.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1F0A98F52593AB1300F748B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F43BBC425716109002A72C9 /* ExtensionDelegate.swift */,
+				1F43BBD12571610A002A72C9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F0A98F92593AB6C00F748B0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F324ACF2593EDCA00AEB6E3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F43BBC025716109002A72C9 /* HostingController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1F324AD02593EDE500AEB6E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F409F8325943F1000F3BE45 /* Full Screen */,
+				1F409F8225943F0600F3BE45 /* Embedded */,
+				1F409F502594228000F3BE45 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F324AD12593EE9600AEB6E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F409F6125942A4500F3BE45 /* CustomButtonStyle.swift */,
+				1F324AD32593F01600AEB6E3 /* Constants */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F324AD32593F01600AEB6E3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1F409F552594232300F3BE45 /* ImageConstants.swift */,
+				1F4923352593F1E800ACC2FB /* VcConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		1F409F8225943F0600F3BE45 /* Embedded */ = {
+			isa = PBXGroup;
+			children = (
+				1F0A98ED2593A9C600F748B0 /* EmbeddedColorWheelView.swift */,
+				1F409F7D25943F0300F3BE45 /* RGBComponentsView.swift */,
+			);
+			path = Embedded;
+			sourceTree = "<group>";
+		};
+		1F409F8325943F1000F3BE45 /* Full Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1F409F8425943F1700F3BE45 /* FullScreenColorWheelSelectedColorView.swift */,
+				1F409F7225943AC400F3BE45 /* SelectedColorView.swift */,
+			);
+			path = "Full Screen";
+			sourceTree = "<group>";
+		};
+		1F43BBB025716107002A72C9 /* QudiaColorWheel Example WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				1F0A98F92593AB6C00F748B0 /* Models */,
+				1F0A98F32593AAC400F748B0 /* Views */,
+				1F0A98F22593AAC000F748B0 /* Supporting Files */,
+			);
+			path = "QudiaColorWheel Example WatchKit App";
+			sourceTree = "<group>";
+		};
+		1F43BBBF25716109002A72C9 /* QudiaColorWheel Example WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1F324AD12593EE9600AEB6E3 /* Models */,
+				1F324AD02593EDE500AEB6E3 /* Views */,
+				1F324ACF2593EDCA00AEB6E3 /* Controllers */,
+				1F0A98F52593AB1300F748B0 /* Supporting Files */,
+				1F43BBCE2571610A002A72C9 /* Preview Content */,
+			);
+			path = "QudiaColorWheel Example WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1F43BBCE2571610A002A72C9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1F43BBCF2571610A002A72C9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		574D75D80A774BBE0AA744D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81D2C6E076A89CE516D114DE /* Pods-QudiaColorWheel Example WatchKit App.debug.xcconfig */,
+				EAAFE422FCA5DF03A4AF0F2E /* Pods-QudiaColorWheel Example WatchKit App.release.xcconfig */,
+				EE729A006860F4B624C663C1 /* Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.debug.xcconfig */,
+				E6AEA89D5256C7623274671F /* Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				1F43BBB025716107002A72C9 /* QudiaColorWheel Example WatchKit App */,
+				1F43BBBF25716109002A72C9 /* QudiaColorWheel Example WatchKit Extension */,
+				607FACD11AFB9204008FA782 /* Products */,
+				574D75D80A774BBE0AA744D2 /* Pods */,
+				CC47E6978302230D744DB3A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F43BBA925716107002A72C9 /* QudiaColorWheel Example.app */,
+				1F43BBAC25716107002A72C9 /* QudiaColorWheel Example.app */,
+				1F43BBBB25716109002A72C9 /* QudiaColorWheel Example.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				97AEBBC839DA086818A7F3B4 /* README.md */,
+				C7847C5943FD60851415DF7C /* LICENSE */,
+				1F159B8C2979238300A00AC3 /* QudiaColorWheel.podspec */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		CC47E6978302230D744DB3A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				150462E48B5A8BAE0B901801 /* Pods_QudiaColorWheel_Example_WatchKit_App.framework */,
+				A37E4A25DB0F142651233581 /* Pods_QudiaColorWheel_Example_WatchKit_App_QudiaColorWheel_Example_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F43BBA825716107002A72C9 /* QudiaColorWheel Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F43BBDB2571610A002A72C9 /* Build configuration list for PBXNativeTarget "QudiaColorWheel Example" */;
+			buildPhases = (
+				1F43BBA725716107002A72C9 /* Resources */,
+				1F43BBDA2571610A002A72C9 /* Embed Watch Content */,
+				EBEAD5692D23C3D96B40D8EB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F43BBAF25716107002A72C9 /* PBXTargetDependency */,
+			);
+			name = "QudiaColorWheel Example";
+			productName = "TSColorWheel Example";
+			productReference = 1F43BBA925716107002A72C9 /* QudiaColorWheel Example.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		1F43BBAB25716107002A72C9 /* QudiaColorWheel Example WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F43BBD72571610A002A72C9 /* Build configuration list for PBXNativeTarget "QudiaColorWheel Example WatchKit App" */;
+			buildPhases = (
+				DC97FFCB08D93DC0607DF081 /* [CP] Check Pods Manifest.lock */,
+				1F43BBAA25716107002A72C9 /* Resources */,
+				1F43BBD62571610A002A72C9 /* Embed Foundation Extensions */,
+				22B9B37CF4A2D7C4BA3E01A5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F43BBBE25716109002A72C9 /* PBXTargetDependency */,
+			);
+			name = "QudiaColorWheel Example WatchKit App";
+			productName = "TSColorWheel Example WatchKit App";
+			productReference = 1F43BBAC25716107002A72C9 /* QudiaColorWheel Example.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1F43BBBA25716109002A72C9 /* QudiaColorWheel Example WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F43BBD32571610A002A72C9 /* Build configuration list for PBXNativeTarget "QudiaColorWheel Example WatchKit Extension" */;
+			buildPhases = (
+				ADB1985CEB92CE9237A81F19 /* [CP] Check Pods Manifest.lock */,
+				1F43BBB725716109002A72C9 /* Sources */,
+				1F43BBB825716109002A72C9 /* Frameworks */,
+				1F43BBB925716109002A72C9 /* Resources */,
+				A44850098291166E62DFE6C7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QudiaColorWheel Example WatchKit Extension";
+			productName = "TSColorWheel Example WatchKit Extension";
+			productReference = 1F43BBBB25716109002A72C9 /* QudiaColorWheel Example.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					1F43BBA825716107002A72C9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1F43BBAB25716107002A72C9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					1F43BBBA25716109002A72C9 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "QudiaColorWheel" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F43BBA825716107002A72C9 /* QudiaColorWheel Example */,
+				1F43BBAB25716107002A72C9 /* QudiaColorWheel Example WatchKit App */,
+				1F43BBBA25716109002A72C9 /* QudiaColorWheel Example WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F43BBA725716107002A72C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F43BBAA25716107002A72C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F43BBB525716109002A72C9 /* Assets.xcassets in Resources */,
+				1F43BBB325716107002A72C9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F43BBB925716109002A72C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F409F5D2594288800F3BE45 /* Assets.xcassets in Resources */,
+				1F43BBD02571610A002A72C9 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A44850098291166E62DFE6C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADB1985CEB92CE9237A81F19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC97FFCB08D93DC0607DF081 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QudiaColorWheel Example WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F43BBB725716109002A72C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F43BBC125716109002A72C9 /* HostingController.swift in Sources */,
+				1F409F512594228000F3BE45 /* ContentView.swift in Sources */,
+				1F43BBC525716109002A72C9 /* ExtensionDelegate.swift in Sources */,
+				1F409F7E25943F0300F3BE45 /* RGBComponentsView.swift in Sources */,
+				1F0A98EE2593A9C600F748B0 /* EmbeddedColorWheelView.swift in Sources */,
+				1F4923362593F1E800ACC2FB /* VcConstants.swift in Sources */,
+				1F409F7325943AC400F3BE45 /* SelectedColorView.swift in Sources */,
+				1F409F6225942A4500F3BE45 /* CustomButtonStyle.swift in Sources */,
+				1F3A115725945B680030BF6F /* FullScreenColorWheelSelectedColorView.swift in Sources */,
+				1F409F562594232300F3BE45 /* ImageConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F43BBAF25716107002A72C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F43BBAB25716107002A72C9 /* QudiaColorWheel Example WatchKit App */;
+			targetProxy = 1F43BBAE25716107002A72C9 /* PBXContainerItemProxy */;
+		};
+		1F43BBBE25716109002A72C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F43BBBA25716109002A72C9 /* QudiaColorWheel Example WatchKit Extension */;
+			targetProxy = 1F43BBBD25716109002A72C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F43BBB125716107002A72C9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F43BBB225716107002A72C9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F43BBD42571610A002A72C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE729A006860F4B624C663C1 /* Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"QudiaColorWheel Example WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J925PW5VP;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "QudiaColorWheel Example WatchKit Extension/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.qudia.QudiaColorWheel-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "QudiaColorWheel Example";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		1F43BBD52571610A002A72C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6AEA89D5256C7623274671F /* Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"QudiaColorWheel Example WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8J925PW5VP;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "QudiaColorWheel Example WatchKit Extension/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.2;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.qudia.QudiaColorWheel-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "QudiaColorWheel Example";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		1F43BBD82571610A002A72C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D2C6E076A89CE516D114DE /* Pods-QudiaColorWheel Example WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8J925PW5VP;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "QudiaColorWheel Example WatchKit App/Supporting Files/Info.plist";
+				MARKETING_VERSION = 2.0.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.qudia.QudiaColorWheel-Example.watchkitapp";
+				PRODUCT_NAME = "QudiaColorWheel Example";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		1F43BBD92571610A002A72C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAFE422FCA5DF03A4AF0F2E /* Pods-QudiaColorWheel Example WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 8J925PW5VP;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "QudiaColorWheel Example WatchKit App/Supporting Files/Info.plist";
+				MARKETING_VERSION = 2.0.2;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.qudia.QudiaColorWheel-Example.watchkitapp";
+				PRODUCT_NAME = "QudiaColorWheel Example";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		1F43BBDC2571610A002A72C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8J925PW5VP;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MARKETING_VERSION = 2.0.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.qudia.QudiaColorWheel-Example";
+				PRODUCT_NAME = "QudiaColorWheel Example";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1F43BBDD2571610A002A72C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 8J925PW5VP;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MARKETING_VERSION = 2.0.2;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.qudia.QudiaColorWheel-Example";
+				PRODUCT_NAME = "QudiaColorWheel Example";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "QudiaColorWheel Example";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "QudiaColorWheel Example";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F43BBD32571610A002A72C9 /* Build configuration list for PBXNativeTarget "QudiaColorWheel Example WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F43BBD42571610A002A72C9 /* Debug */,
+				1F43BBD52571610A002A72C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F43BBD72571610A002A72C9 /* Build configuration list for PBXNativeTarget "QudiaColorWheel Example WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F43BBD82571610A002A72C9 /* Debug */,
+				1F43BBD92571610A002A72C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F43BBDB2571610A002A72C9 /* Build configuration list for PBXNativeTarget "QudiaColorWheel Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F43BBDC2571610A002A72C9 /* Debug */,
+				1F43BBDD2571610A002A72C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "QudiaColorWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}
