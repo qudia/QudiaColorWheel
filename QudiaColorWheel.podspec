@@ -5,8 +5,8 @@ Pod::Spec.new do |s|
   s.homepage = 'https://github.com/qudia/QudiaColorWheel'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.author = { 'Qudia' => 'info@qudia.io' }
-  s.source  = { :git => 'https://github.com/qudia/QudiaColorWheel.git', :tag => s.version.to_s }
-  s.watchos.deployment_target = '6.0'
+  s.source = { :git => 'https://github.com/qudia/QudiaColorWheel.git', :tag => s.version.to_s }
+  s.watchos.deployment_target = '6.2.1'
   s.source_files = 'QudiaColorWheel/Classes/**/*'
   s.resources = 'QudiaColorWheel/Assets/**'
   s.swift_version = '5.7'
