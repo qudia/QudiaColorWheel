@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'QudiaColorWheel'
-  s.version = '2.0.4'
+  s.version = '2.0.5'
   s.summary = 'A color wheel for watchOS based on Colorful'
   s.homepage = 'https://github.com/qudia/QudiaColorWheel'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
