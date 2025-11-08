@@ -17,6 +17,11 @@ QudiaColorWheel is available through [CocoaPods](https://cocoapods.org). To inst
 ```ruby
 pod 'QudiaColorWheel'
 ```
+Also, QudiaColorWheel is available through SPM (Note: Update this when feature merged on parent pod)
+
+```ruby
+https://github.com/radg1596/QudiaColorWheel-SPM
+```
 
 ## Usage
 
