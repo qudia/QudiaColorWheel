@@ -158,7 +158,11 @@ public struct QudiaColorWheel: View {
     }
 
     func getImage(named name: String) -> UIImage {
+        #if SWIFT_PACKAGE
+        let bundle = Bundle.module
+        #else
         let bundle = Bundle(for: QudiaColorWheelSettings.self)
+        #endif
 
         if let image = UIImage(named: name, in: bundle, with: nil) {
             return image
