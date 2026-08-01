@@ -19,7 +19,7 @@ struct EmbeddedColorWheelView: View {
                 Spacer(minLength: 2)
             }
         }
-        .navigationBarTitle("SwiftUI")
+        .navigationTitle("SwiftUI")
         .edgesIgnoringSafeArea(.bottom)
     }
 }

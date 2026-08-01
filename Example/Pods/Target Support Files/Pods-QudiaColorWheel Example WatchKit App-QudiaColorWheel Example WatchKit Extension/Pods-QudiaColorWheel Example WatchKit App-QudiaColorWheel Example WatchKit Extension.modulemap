@@ -1,6 +1,0 @@
-framework module Pods_QudiaColorWheel_Example_WatchKit_App_QudiaColorWheel_Example_WatchKit_Extension {
-  umbrella header "Pods-QudiaColorWheel Example WatchKit App-QudiaColorWheel Example WatchKit Extension-umbrella.h"
-
-  export *
-  module * { export * }
-}

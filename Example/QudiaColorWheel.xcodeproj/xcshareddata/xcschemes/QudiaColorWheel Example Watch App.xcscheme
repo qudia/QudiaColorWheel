@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1420"
+   LastUpgradeVersion = "2660"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E5798A970B3F8A8E94117AA5E41F55CB"
-               BuildableName = "QudiaColorWheel.framework"
-               BlueprintName = "QudiaColorWheel"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "AA00000000000000000000E5"
+               BuildableName = "QudiaColorWheel Example Watch App.app"
+               BlueprintName = "QudiaColorWheel Example Watch App"
+               ReferencedContainer = "container:QudiaColorWheel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AA00000000000000000000E5"
+            BuildableName = "QudiaColorWheel Example Watch App.app"
+            BlueprintName = "QudiaColorWheel Example Watch App"
+            ReferencedContainer = "container:QudiaColorWheel.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E5798A970B3F8A8E94117AA5E41F55CB"
-            BuildableName = "QudiaColorWheel.framework"
-            BlueprintName = "QudiaColorWheel"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "AA00000000000000000000E5"
+            BuildableName = "QudiaColorWheel Example Watch App.app"
+            BlueprintName = "QudiaColorWheel Example Watch App"
+            ReferencedContainer = "container:QudiaColorWheel.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

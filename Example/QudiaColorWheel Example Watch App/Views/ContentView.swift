@@ -22,7 +22,7 @@ struct ContentView: View {
 
             Spacer(minLength: 4)
 
-            NavigationLink("Storyboard", destination: FullScreenColorWheelSelectedColorView())
+            NavigationLink("Full Screen", destination: FullScreenColorWheelSelectedColorView())
                 .buttonStyle(CustomButtonStyle())
 
             Spacer()

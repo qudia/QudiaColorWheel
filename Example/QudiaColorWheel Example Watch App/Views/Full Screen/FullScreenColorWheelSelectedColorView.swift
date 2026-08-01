@@ -3,6 +3,7 @@ import QudiaColorWheel
 
 struct FullScreenColorWheelSelectedColorView: View {
     @ObservedObject var colorWheelSettings = QudiaColorWheelSettings.shared
+    @State private var isShowingColorWheel = false
 
     var body: some View {
         VStack(spacing: 0) {
@@ -12,12 +13,9 @@ struct FullScreenColorWheelSelectedColorView: View {
             SelectedColorView()
 
             Spacer(minLength: 24)
-            
+
             Button {
-                WKExtension.shared().rootInterfaceController?.presentController(
-                    withName: VcConstants.colorWheel,
-                    context: nil
-                )
+                isShowingColorWheel = true
             } label: {
                 Text("Change Color")
             }
@@ -26,6 +24,11 @@ struct FullScreenColorWheelSelectedColorView: View {
             Spacer()
                 .frame(maxHeight: .infinity)
         }
-        .navigationBarTitle("Storyboard")
+        .navigationTitle("Full Screen")
+        .sheet(isPresented: $isShowingColorWheel) {
+            NavigationStack {
+                QudiaColorWheel()
+            }
+        }
     }
 }

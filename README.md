@@ -2,9 +2,10 @@
 
 # QudiaColorWheel
 
-[![Version](https://img.shields.io/cocoapods/v/QudiaColorWheel.svg?style=flat)](https://cocoapods.org/pods/QudiaColorWheel)
-[![License](https://img.shields.io/cocoapods/l/QudiaColorWheel.svg?style=flat)](https://cocoapods.org/pods/QudiaColorWheel)
-[![Platform](https://img.shields.io/cocoapods/p/QudiaColorWheel.svg?style=flat)](https://cocoapods.org/pods/QudiaColorWheel)
+[![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
+[![Swift](https://img.shields.io/badge/Swift-5.9-orange.svg?style=flat)](https://swift.org)
+[![Platform](https://img.shields.io/badge/platform-watchOS%2010%2B-lightgrey.svg?style=flat)](https://github.com/qudia/QudiaColorWheel)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 A color wheel/picker for watchOS based on [Colorful](https://github.com/hayashi311/Color-Picker-for-iOS) that uses the Digital Crown as a brightness slider.
 
@@ -12,15 +13,43 @@ A color wheel/picker for watchOS based on [Colorful](https://github.com/hayashi3
 
 ## Installation
 
-QudiaColorWheel is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
+QudiaColorWheel is available through the [Swift Package Manager](https://swift.org/package-manager/).
 
-```ruby
-pod 'QudiaColorWheel'
+### Xcode
+
+In Xcode, go to **File → Add Package Dependencies…**, enter the repository URL and select the version rule you want:
+
+```
+https://github.com/qudia/QudiaColorWheel
+```
+
+Then add the `QudiaColorWheel` library to your watch app target.
+
+### Package.swift
+
+Add the package to your `dependencies`, and the library to the targets that need it:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/qudia/QudiaColorWheel.git", from: "2.0.5")
+],
+targets: [
+    .target(
+        name: "MyWatchApp",
+        dependencies: ["QudiaColorWheel"]
+    )
+]
+```
+
+Then import it where you use it:
+
+```swift
+import QudiaColorWheel
 ```
 
 ## Usage
 
-You can use `QudiaColorWheel` in a SwiftUI view structure, as well as `QudiaColorWheelController` in your storyboard, if you need to support watchOS 6.
+You can use `QudiaColorWheel` in a SwiftUI view structure, as well as `QudiaColorWheelController` in your storyboard.
 
 ### Usage in a SwiftUI view structure
 
@@ -62,11 +91,12 @@ To get whether **a color is light or dark**, use `colorWheelSettings.isLightColo
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo and open `Example/QudiaColorWheel.xcodeproj`. It consumes the package as a local Swift package dependency, so there is no dependency step to run first.
 
 ## Requirements
 
-watchOS 6.2.1
+- watchOS 10.0+
+- Swift 5.9+
 
 ## Author
 

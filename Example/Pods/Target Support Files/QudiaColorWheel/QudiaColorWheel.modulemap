@@ -1,6 +1,0 @@
-framework module QudiaColorWheel {
-  umbrella header "QudiaColorWheel-umbrella.h"
-
-  export *
-  module * { export * }
-}

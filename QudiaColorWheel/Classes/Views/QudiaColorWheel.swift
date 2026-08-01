@@ -103,7 +103,10 @@ public struct QudiaColorWheel: View {
         return Image(uiImage: getImage(named: "colorwheel"))
             .resizable()
             .aspectRatio(1, contentMode: .fit)
-            .overlay(Color.black.opacity(Double(1 - settings.hsvColor.brightness)))
+            .overlay(
+                Circle()
+                    .fill(Color.black.opacity(Double(1 - settings.hsvColor.brightness)))
+            )
     }
 
     func normalize(positionInView: CGPoint) -> CGPoint {
