@@ -101,7 +101,7 @@ To run the example project, clone the repo and open `Example/QudiaColorWheel.xco
 ## Author
 
 Qudia  
-https://qudia.io
+https://qudia.org
 
 ## License
 
