@@ -100,13 +100,14 @@ public struct QudiaColorWheel: View {
             containerSize = metrics.size
         }
 
+        // Brightness scales the wheel's own pixels rather than being a black
+        // circle laid over them: an overlay can only ever be as round as the
+        // image under it, and its antialiased edge let a rim of the full
+        // brightness wheel show through at low brightness.
         return Image(uiImage: getImage(named: "colorwheel"))
             .resizable()
             .aspectRatio(1, contentMode: .fit)
-            .overlay(
-                Circle()
-                    .fill(Color.black.opacity(Double(1 - settings.hsvColor.brightness)))
-            )
+            .colorMultiply(Color(white: Double(settings.hsvColor.brightness)))
     }
 
     func normalize(positionInView: CGPoint) -> CGPoint {
