@@ -21,6 +21,11 @@ public struct QudiaColorWheel: View {
 
     @State var digitalCrownValue = 0.0
 
+    /// How many detents the crown spends covering black to full brightness. The
+    /// wheel is read at a glance rather than dialled in, so this is coarse
+    /// enough to cross in a flick and still finer than the eye separates.
+    static let brightnessSteps = 255.0
+
     @State var containerSize = CGSize.zero
 
     var thumbCenterMinX: CGFloat { (containerSize.width - colorWheelSize) / 2 }
@@ -75,19 +80,19 @@ public struct QudiaColorWheel: View {
         .digitalCrownRotation(
             $digitalCrownValue,
             from: 0,
-            through: 255,
+            through: Self.brightnessSteps,
             by: 1,
-            sensitivity: .medium,
+            sensitivity: .high,
             isHapticFeedbackEnabled: false
         )
         .onAppear() {
             didAppear = true
-            digitalCrownValue = 255 - Double(round(settings.hsvColor.brightness * 255))
+            digitalCrownValue = Self.brightnessSteps - Double(round(settings.hsvColor.brightness * Self.brightnessSteps))
         }
         .onReceive(Just(digitalCrownValue)) { amount in
             if didAppear {
                 DispatchQueue.main.async {
-                    settings.hsvColor.brightness = CGFloat((255 - digitalCrownValue) / 255)
+                    settings.hsvColor.brightness = CGFloat((Self.brightnessSteps - digitalCrownValue) / Self.brightnessSteps)
                 }
             }
         }
